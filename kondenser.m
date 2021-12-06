@@ -14,6 +14,7 @@ cf = fit(T,U,'exp2');
 
 figure(1),clf,hold on,grid on
 %plot(T,U,'.','LineWidth',1)
+options = optimset('Display','notify');
 plot(cf,T,U);
 
 yyaxis right
